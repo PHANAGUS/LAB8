@@ -1,8 +1,24 @@
 #include<iostream>
 using namespace std;
 
-char before(char x){
+char before(char x)
+{
 	//Write your function definition here
+	if(x < 65 || x > 90)
+	{
+		return 48;
+	}
+	else
+	{
+		if(x==65)
+		{
+			return 90;
+		}
+		else
+		{
+			return x-1;
+		}
+	}
 }
 
 int main(){
